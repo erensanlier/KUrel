@@ -69,7 +69,7 @@ class RequestsController extends Controller
         $req->token = Str::random(32);
         $req->save();
 
-        /*send mail here as /verify/{id}/{token}*/
+        /*send mail here as /verify/{id}/{token}**-*-*/
         try {
             Mail::to($req->email)
                 ->send(new RequestVerify($req));
