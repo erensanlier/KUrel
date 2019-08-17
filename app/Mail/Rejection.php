@@ -32,7 +32,7 @@ class Rejection extends Mailable
     public function build()
     {
         return $this->subject('About your SL Application')
-            ->from('info@sl.ku.edu.tr', 'SL Coordinators')
+            ->from('info@sl.ku.edu.tr', 'SL Team')
             ->view('mail.rejection')->with([
                 'request' => $this->name
             ]);
