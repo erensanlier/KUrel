@@ -2,8 +2,10 @@
 
 @section('content')
 
+<?php
+use Carbon\Carbon;
 
-
+?>
 
     <div class="container">
 
@@ -100,6 +102,7 @@
                                            class="form-control @error('startTime') is-invalid @enderror"
                                            name="startTime"
                                            value="{{ old('startTime') }}" required autocomplete="startTime" autofocus>
+
                                         @for($hour = '08'; $hour < 24; $hour++)
                                             @for($minute = '00'; $minute < 60; $minute+=15)
                                                 <option>{{$hour}}:{{$minute}}</option>
@@ -111,7 +114,6 @@
                                             @endfor
                                         @endfor
                                         <option>2:00</option>
-
                                     </select>
 
                                     @error('startTime')
