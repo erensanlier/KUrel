@@ -47,7 +47,7 @@
                                 </div>
 
                                 <div class="form-group row pt-4">
-                                    <button class="btn btn-primary" style="margin-bottom: 25px">Create Request</button>
+                                    <button class="btn btn-primary" style="margin-bottom: 25px">Send Mail</button>
                                 </div>
                             </div>
                         </div>

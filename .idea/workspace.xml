@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a4ebdd0-10a6-405d-8ee8-e84ebed2b832" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/application/rejectionsender.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/mail/rejection.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/RequestDeleted.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/RequestDeleted.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/request/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/request/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/application/rejectionsender.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/application/rejectionsender.blade.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,7 +54,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/mail/rejection.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="783">
@@ -111,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/application/rejectionsender.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="18" column="65" lean-forward="true" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+            <state relative-caret-position="493">
+              <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -197,11 +193,11 @@
         <option value="$PROJECT_DIR$/resources/views/rejectionsender.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/request/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Mail/RequestDeleted.php" />
-        <option value="$PROJECT_DIR$/resources/views/application/rejectionsender.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" />
         <option value="$PROJECT_DIR$/app/Mail/Rejection.php" />
         <option value="$PROJECT_DIR$/resources/views/mail/rejection.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/application/rejectionsender.blade.php" />
       </list>
     </option>
   </component>
@@ -456,7 +452,7 @@
       <workItem from="1564755033889" duration="327000" />
       <workItem from="1564853049084" duration="3000" />
       <workItem from="1564991618424" duration="66000" />
-      <workItem from="1565334020338" duration="5225000" />
+      <workItem from="1565334020338" duration="5519000" />
     </task>
     <servers />
   </component>
@@ -466,7 +462,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140931000" />
+    <option name="totallyTimeSpent" value="141225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -824,13 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/application/rejectionsender.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="18" column="65" lean-forward="true" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
@@ -855,6 +844,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="783">
           <caret line="137" column="45" lean-forward="true" selection-start-line="137" selection-start-column="45" selection-end-line="137" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/application/rejectionsender.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
         </state>
       </provider>
     </entry>
