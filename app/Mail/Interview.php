@@ -2,17 +2,17 @@
 
 namespace App\Mail;
 
-use App\Request;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class Rejection extends Mailable
+class Interview extends Mailable
 {
     use Queueable, SerializesModels;
 
     public $name;
+
 
     /**
      * Create a new message instance.
@@ -33,8 +33,8 @@ class Rejection extends Mailable
     {
         return $this->subject('About your SL Application')
             ->from('info@sl.ku.edu.tr', 'SL Team')
-            ->view('mail.rejection')->with([
-                'name' => $this->name
+            ->view('mail.interview')->with([
+                'name' => $this->name,
             ]);
     }
 }

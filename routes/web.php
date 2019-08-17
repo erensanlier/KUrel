@@ -39,3 +39,6 @@ Route::get('/status', 'Controller@status')->middleware('auth');
 
 Route::get('/application/reject', 'ApplicationController@rejection')->middleware('auth');
 Route::post('/rejection', 'ApplicationController@rejectionSend');
+
+Route::get('/application/interview', 'ApplicationController@interview')->middleware('auth');
+Route::post('/interview', 'ApplicationController@interviewSend');
