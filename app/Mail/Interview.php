@@ -32,7 +32,7 @@ class Interview extends Mailable
     public function build()
     {
         return $this->subject('About your SL Application')
-            ->from('info@sl.ku.edu.tr', 'SL Team')
+            ->from('no-reply@sl.ku.edu.tr', 'SL Team')
             ->view('mail.interview')->with([
                 'name' => $this->name,
             ]);
