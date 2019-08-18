@@ -37,8 +37,8 @@ Route::get('/play', 'Controller@play');
 
 Route::get('/status', 'Controller@status')->middleware('auth');
 
-Route::get('/application/reject', 'ApplicationController@rejection')->middleware('auth');
+Route::get('/application/reject', 'ApplicationController@rejection');
 Route::post('/rejection', 'ApplicationController@rejectionSend');
 
-Route::get('/application/interview', 'ApplicationController@interview')->middleware('auth');
+Route::get('/application/interview', 'ApplicationController@interview');
 Route::post('/interview', 'ApplicationController@interviewSend');

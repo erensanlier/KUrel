@@ -23,7 +23,7 @@ class ApplicationController extends Controller
     {
 
         $data = request()->validate([
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:requests', new KUMail],
+            'email' => ['required', 'string', 'email', new KUMail],
             'name' => ['required', 'string', 'max:255'],
         ]);
 
