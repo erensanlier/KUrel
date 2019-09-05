@@ -131,12 +131,12 @@
                     <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
                         <tr>
                             <td class="content-block" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; font-size: 12px; color: #999999; text-align: center;">
-                                <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">SL Team, Koc University</span>
+                                <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">Section Leader Coordinators</span>
                             </td>
                         </tr>
                         <tr>
                             <td class="content-block powered-by" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; font-size: 12px; color: #999999; text-align: center;">
-                                Section Leader Coordinators
+                                SL Team, Koc University
                             </td>
                         </tr>
                     </table>
