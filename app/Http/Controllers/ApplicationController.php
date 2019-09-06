@@ -30,6 +30,7 @@ class ApplicationController extends Controller
         /*send mail here as /verify/{id}/{token}**-*-*/
         try {
             Mail::to($data['email'])
+                ->cc('comp130-slcs-group@ku.edu.tr')
                 ->send(new Rejection($data['name']));
             $msg = 'Rejection mail sended';
 
@@ -62,6 +63,7 @@ class ApplicationController extends Controller
         /*send mail here as /verify/{id}/{token}**-*-*/
         try {
             Mail::to($data['email'])
+                ->cc('comp130-slcs-group@ku.edu.tr')
                 ->send(new Interview($data['name']));
             $msg = 'Interview mail sended';
 
