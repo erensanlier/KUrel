@@ -65,7 +65,7 @@ class ApplicationController extends Controller
             Mail::to($data['email'])
                 ->cc('comp130-slcs-group@ku.edu.tr')
                 ->send(new Interview($data['name']));
-            $msg = 'Interview mail sended';
+            $msg = 'Interview mail sended'; 
 
             $file = 'mailed.txt';
             $content = file_get_contents($file);

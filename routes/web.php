@@ -15,8 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
 
+
+Auth::routes(['register'=>false]);
 Route::get('/pending', 'RequestsController@index')->middleware('auth');
 Route::get('/request/create', 'RequestsController@create');
 Route::post('/request', 'RequestsController@store');
@@ -37,8 +38,8 @@ Route::get('/play', 'Controller@play');
 
 Route::get('/status', 'Controller@status')->middleware('auth');
 
-Route::get('/application/reject', 'ApplicationController@rejection');
-Route::post('/rejection', 'ApplicationController@rejectionSend');
+//Route::get('/application/reject', 'ApplicationController@rejection');
+//Route::post('/rejection', 'ApplicationController@rejectionSend');
 
-Route::get('/application/interview', 'ApplicationController@interview');
-Route::post('/interview', 'ApplicationController@interviewSend');
+//Route::get('/application/interview', 'ApplicationController@interview');
+//Route::post('/interview', 'ApplicationController@interviewSend');

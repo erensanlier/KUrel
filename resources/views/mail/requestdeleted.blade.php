@@ -117,7 +117,7 @@
                                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><strong>Reason: </strong>{{$request->reason}}</p>
                                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><strong>Notes: </strong>{{$request->notes}}</p>
                                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><strong>Time: </strong>{{$request->startTime}}</p>
-                                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">We are sorry about that, a SL will contact with you soon!</p>
+                                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">If you think there is a mistake or if you have any questions, please contact us!</p>
                                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Have a nice day!</p>
                                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">- SL Team</p>
                                     </td>
@@ -134,7 +134,7 @@
                     <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
                         <tr>
                             <td class="content-block" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; font-size: 12px; color: #999999; text-align: center;">
-                                <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">KUrel Office, Koc University, SNA1xx</span>
+                                <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">KUrel Office, Koc University</span>
                             </td>
                         </tr>
                         <tr>
