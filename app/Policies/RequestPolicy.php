@@ -58,7 +58,7 @@ class RequestPolicy
 
     public function softUpdate(User $user, Request $request)
     {
-        return $user->role == 'slc' || $user->role == 'sle';
+        return $user->role == 'slc' || $user->role == 'sl';
     }
 
     /**

@@ -191,9 +191,7 @@ class RequestsController extends Controller
 
     public function done(Request $request){
 
-        $this->authorize('softUpdate', $request);
-
-        if(auth()->user()->email == $request->taken_by || auth()->user()->role == 'slc'){
+        if(auth()->user()->name == $request->taken_by || auth()->user()->role == 'slc'){
             if($request->taken_place == false){
                 $request->taken_place = true;
                 $request->save();
