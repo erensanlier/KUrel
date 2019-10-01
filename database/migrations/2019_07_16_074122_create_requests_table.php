@@ -15,7 +15,7 @@ class CreateRequestsTable extends Migration
     {
         Schema::create('requests', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('course');
             $table->string('reason');
             $table->string('notes');

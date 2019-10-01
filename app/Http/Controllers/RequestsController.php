@@ -6,6 +6,7 @@ use App\Mail\RequestDeleted;
 use App\Mail\RequestTakenMail;
 use App\Mail\RequestVerify;
 use App\Notifications\RequestTaken;
+use App\Rules\NewRequestRule;
 use Carbon\Carbon;
 use Illuminate\Notifications\Notifiable;
 use App\Notifications\RequestMade;
@@ -49,14 +50,14 @@ class RequestsController extends Controller
     public function store(){
 
         $data = request()->validate([
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:requests', new KUMail],
+            'email' => ['required', 'string', 'email', 'max:255', new KUMail, new NewRequestRule],
             'course' => ['required', 'string', 'max:255'],
             'reason' => ['required', 'string',],
             'startTime' => ['required', 'string', new TimePick],
             'notes' =>  ['required', 'string',],
         ]);
 
-
+        // Create new request with given data
         $req = new Request();
         $req->email = $data['email'];
         $req->course = $data['course'];
@@ -66,7 +67,7 @@ class RequestsController extends Controller
             $req->startTime->addDay();
         }
         $req->notes = $data['notes'];
-        $req->token = Str::random(32);
+        $req->token = Str::random(32); // New token for validation
         $req->save();
 
         /*send mail here as /verify/{id}/{token}**-*-*/
