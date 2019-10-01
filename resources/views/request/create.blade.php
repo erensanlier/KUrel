@@ -103,17 +103,12 @@ use Carbon\Carbon;
                                            name="startTime"
                                            value="{{ old('startTime') }}" required autocomplete="startTime" autofocus>
 
-                                        @for($hour = '08'; $hour < 24; $hour++)
+                                        @for($hour = '08'; $hour < 21; $hour++)
                                             @for($minute = '00'; $minute < 60; $minute+=15)
                                                 <option>{{$hour}}:{{$minute}}</option>
                                             @endfor
                                         @endfor
-                                        @for($hour = '00'; $hour < 2; $hour++)
-                                            @for($minute = '00'; $minute < 60; $minute+=15)
-                                                <option>{{$hour}}:{{$minute}}</option>
-                                            @endfor
-                                        @endfor
-                                        <option>2:00</option>
+                                        <option>21:00</option>
                                     </select>
 
                                     @error('startTime')
