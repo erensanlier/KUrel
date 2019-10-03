@@ -287,9 +287,11 @@ class RequestsController extends Controller
      *
      * To delete a particular request
      */
-    public function delete(Request $request){
+    public function delete(Request $request)
+    {
 
-        $this->authorize('SLC', Request::class);
+        $this->authorize('admin', Request::class);
+
 
         try {
             $request->delete();
