@@ -290,7 +290,7 @@ class RequestsController extends Controller
     public function delete(Request $request)
     {
 
-        $this->authorize('admin', Request::class);
+        $this->authorize('SLC', Request::class);
 
 
         try {
