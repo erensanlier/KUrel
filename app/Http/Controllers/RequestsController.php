@@ -175,7 +175,6 @@ class RequestsController extends Controller
             //Sending mail to student
             try {
                 Mail::to($request->email)
-                    ->cc('comp130-slcs-group@ku.edu.tr')
                     ->send(new RequestTakenMail($request));
                 $msg = 'Appointment is set, you can check it in My Appointments Section. Student has been informed as well';
                 return view('alert', ['msg' => $msg, 'type' => 'success']);
