@@ -15,7 +15,8 @@ use App\Rules\KUMail;
 use App\Rules\TimePick;
 use App\User;
 use Illuminate\Notifications\Notification;
-use Illuminate\Support\Facades\Mail;use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
 
 class RequestsController extends Controller
 {

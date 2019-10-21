@@ -32,6 +32,11 @@ Route::get('/request/{request}/done', 'RequestsController@done');
 Route::get('/request/{request}/undone', 'RequestsController@undone');
 Route::get('/appointments/{user}', 'RequestsController@appointmentsOf');
 
+Route::get('/pschange/create', 'PSChangeController@create');
+Route::post('/pschange', 'PSChangeController@store');
+Route::get('/psverify/{request}/{token}', 'PSChangeController@verify')->name('pschange.verify');
+
+
 Route::get('/verify/{request}/{token}', 'RequestsController@verify')->name('request.verify');
 
 Route::get('/play', 'Controller@play');

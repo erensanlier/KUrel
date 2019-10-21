@@ -101,7 +101,7 @@
 
                 <div class="links">
                     <a href="/request/create">New Appointment</a>
-                    <a href="/request/create">Events</a>
+                    <a href="/pschange/create">PS Change</a>
                     <a href="/play">Karel IDE</a>
                     <a href="https://sl.ku.edu.tr">Our Website</a>
                     <a href="mailto:comp130-slcs-group@ku.edu.tr?Subject=About%20KUrel%20Office">Contact us</a>
