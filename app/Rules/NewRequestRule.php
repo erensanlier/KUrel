@@ -27,6 +27,12 @@ class NewRequestRule implements Rule
      */
     public function passes($attribute, $value)
     {
+        $temp = Request::where('email', $value)->where('verified', true)->where('taken_by', null)->get();
+        if(count($temp) == 1){
+           return true;
+        }
+
+
         $requests = Request::where('email', $value)->where('taken_place', false)->get();
         return sizeof($requests) == 0;
     }

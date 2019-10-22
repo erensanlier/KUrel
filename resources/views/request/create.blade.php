@@ -19,6 +19,7 @@ use Carbon\Carbon;
                     <div class="row col-8 offset-1">3. Wait until an available SL is assigned to your request, you will receive an email.</div>
                     <div class="row col-8 offset-1">4. Come to our office at the selected time.</div>
                     <div class="row col-8 offset-1" style="margin-bottom: 25px">5. If you encounter any problems, please contact us!</div>
+                    <div class="row col-8 offset-1" style="margin-bottom: 25px">If no SL takes your appointment, you can reschedule it simply by creating a new request.</div>
 
 
                 </div>
