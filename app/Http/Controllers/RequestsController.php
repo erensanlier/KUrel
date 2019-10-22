@@ -62,13 +62,7 @@ class RequestsController extends Controller
         //Check if there is already a request with unassigned SL of the student
         $temp = Request::where('email', $data['email'])->where('verified', true)->where('taken_by', null)->get();
         if(count($temp) == 1){
-            $temp[0]->startTime = new Carbon($data['startTime']);
-            if(Carbon::now()->isAfter($temp[0]->startTime)){
-                $temp[0]->startTime->addDay();
-            }
-            $temp[0]->save();
-            $msg = 'Your request has been successfully rescheduled, we will mail you when an available SL takes it';
-            return view('alert', ['msg' => $msg, 'type' => 'success']);
+            $temp[0]->delete();
         }
 
         // Create new request with given data
