@@ -135,6 +135,10 @@
 
                     </div>
 
+                    <div class="" style="color: #495057;">
+                        SCI Z32
+                    </div>
+
                     @auth
                     <div class="row flex-center">
                         <h2>Logged In As: </h2>
