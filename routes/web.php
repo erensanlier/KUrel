@@ -17,7 +17,8 @@ Route::get('/', function () {
 
 
 
-Auth::routes(['register'=>false]);
+//Auth::routes(['register'=>false]);
+Auth::routes();
 Route::get('/pending', 'RequestsController@index')->middleware('auth');
 Route::get('/request/create', 'RequestsController@create');
 Route::post('/request', 'RequestsController@store');

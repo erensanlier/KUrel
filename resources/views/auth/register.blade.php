@@ -40,6 +40,28 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="course" class="col-md-4 col-form-label text-md-right">{{ __('Course') }}</label>
+
+                            <div class="col-md-6">
+                                <select id="course"
+                                        type="text"
+                                        class="form-control @error('course') is-invalid @enderror"
+                                        name="course"
+                                        value="{{ old('course') }}" required autocomplete="course" autofocus>
+                                    <option>UNIV198</option>
+                                    <option>COMP125</option>
+                                    <option>COMP131</option>
+                                </select>
+
+                                @error('course')
+                                <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">

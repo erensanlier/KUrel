@@ -71,9 +71,7 @@ class RequestsController extends Controller
         $req->course = $data['course'];
         $req->reason = $data['reason'];
         $req->startTime = new Carbon($data['startTime']);
-        if(Carbon::now()->isAfter($req->startTime)){
-            $req->startTime->addDay();
-        }
+        $req->startTime->addDay();
         $req->notes = $data['notes'];
         $req->token = Str::random(32); // New token for validation
         $req->save();
