@@ -15,9 +15,9 @@ return [
     */
 
     'mailgun' => [
-        'domain' => 'mail.vanderapp.com',
-        'secret' => '692f3e382e0b4c2f552a160edeede890-c50f4a19-54976836',
-        'endpoint' => 'api.eu.mailgun.net',
+        'domain' => '',
+        'secret' => '',
+        'endpoint' => '',
     ],
 
     'postmark' => [
